@@ -1,0 +1,160 @@
+---
+title: "Breeding program for quinoa (*Chenopodium quinoa*) using landraces for breeding improved varieties in the highland from Peru"
+author: ["<span class=\"presenter\">Flavio Lozano-Isla<sup>1</sup></span>, Jose David Apaza-Calcina<sup>2</sup>, Angel Mujica-Sanchez<sup>2</sup>, Bettina I.G Haussmann<sup>3</sup>, Karl J. Schmid<sup>1</sup> <ol class=\"affiliations\"><li>Department of Crop Biodiversity and Breeding Informatics, Faculty of Agriculture, University of Hohenheim, Stuttgart, Germany</li> <li>Quinoa Breeding Program, Universidad Nacional del Altiplano-Puno, Puno, Perú</li><li>Institute of Plant Breeding, Seed Science and Population Genetics, University of Hohenheim, Stuttgart, Germany</li></ol>"]
+output:
+  drposter::drposter_poster:
+    self_contained: false
+    css: custom.css
+# link-citations: yes
+colorlinks: yes
+bibliography:  
+- ../book.bib
+- ../pkgs.bib
+csl: http://www.zotero.org/styles/iica-catie
+---
+
+```{r setup, include=FALSE}
+
+# browseURL("https://www.zotero.org/styles")
+# browseURL("https://retorque.re/zotero-better-bibtex/")
+# browseURL("http://zotfile.com/")
+
+# Markdown Syntax
+
+# - *italic*, **bold**, `code`, ~subscript~, ^superscript^, > quote, ^[footnote]
+# - $inline equation$, $$display equation$$
+# - \begin{equation} (\#eq:eq-label)\end(equation), \@ref(eq:eq-label)
+# - [](hyperlink)
+# - ![](image link), knitr::include_graphics(), \@ref(fig:fig1)
+# - knitr::kable(), \@ref(tab:tab1)
+
+knitr::opts_chunk$set(
+  out.width="100%",
+  fig.align = "center",
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE)
+
+options(
+  digits = 4, 
+  knitr.kable.NA = '',
+  OutDec= ".",
+  citr.use_betterbiblatex = FALSE)
+
+library(rosr)
+library(bookdown)
+library(inserttable) # devtools::install_github("lbusett/insert_table")
+library(knitr)
+library(citr)
+library(googlesheets)
+library(tidyverse)
+library(agricolae)
+library(compareGroups)
+library(FactoMineR)
+library(GerminaR)
+library(cowplot)
+library(grid) 
+library(png)
+library(jpeg)
+
+```
+
+# {.col-2}
+
+## Introduction
+
+Quinoa (*Chenopodium quinoa* Willd.) is an ancient crop from the Andean region and a staple food for smallholder farmers in the highlands. For centuries, Andean farmers have been involved in the domestication and selection of quinoa varieties. Quinoa is tolerant to a diverse range of abiotic stresses and has good nutritional properties, wich have made it attractive around the world as a new crop for food security and that can cope with Climate Change. At present, there is a great demand for the development of new quinoa varieties with higher yields; adapted to new habitats and adverse conditions of Climate Change, and with tolerance to biotic and abiotic stresses.
+
+## Objectives
+
+- To develop a breeding program in the Peruvian Andean highlands region with the collaboration of the smallholder farmers. 
+- To use simple crosses methodology with six quinoa landraces (Salcedo INIA, Pasankalla, Kcancolla, Huariponcho, Negra Collana and Pandela Rosada). 
+- To select promising lines with good agronomic qualities, different grain colors and high yields to be released in 2020 as new cultivars to be used by smallholder farmers in Peru.
+
+## Materials and Methods
+
+### Genetic material
+
+The lines were originated from the simple crosses of 6 varieties (*Salcedo INIA, Pasankalla, Kcancolla, Huariponcho, Negra Collana and Pandela Rosada*), which are the most planted in Peru.
+
+### Evaluations 
+
+The variables evaluated during flowering and maturity were: panicle length (cm), panicle diameter (cm), stem diameter (cm), plant high (cm) yield components (g) and resistance to mildew (scale)-
+
+### Selection 
+
+In the F9 generation, 90 lines by cross were planted with the 6 parentals and 4 checks. After the data analysis, 3 lines by cross were selected. The 18 selected lines were planted in Arequipa for seed propagation with 3 checks under a drip irrigation system.
+
+### Locations and Management 
+
+The lines were planted in 3 locations for the season of 2017 to 2018: Illpa and Camacani in Puno and San Juan de Yanamuclo in Jauja, The experiments were carried out in field conditions, with row distance of 0.6 m and row length of 5 m with plot area of 5 m^2^.
+
+### Data analysis 
+
+The experiments had a lattice design of 10x10 with 2 replication by cross. The data was submitted for a multivariate analysis for PCA [@R-FactoMineR], and for the lines selection it was used the multivariate Elston Index [@elston1963WeightFree].
+
+## Album {style="--header-color:darkorange; --other-color-for-h2-gradient:orange;"}
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRZiUhlP0jtmmQ9Av4PEXS21vmmtaJeaoRW2QTBy5Qs9fXPUxkaEoFX9V4XN0QttyGm7H1dOhnHSKwh/embed?start=true&loop=true&delayms=3000" frameborder="0" width="100%" height="380" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Contact {style="--header-color:darkred; --other-color-for-h2-gradient:red;"}
+
+&#9993; Flavio Lozano Isla <br> flavjack@gmail.com 
+<br>
+&#9993; Karl J. Schmid <br> karl.schmid@uni-hohenheim.de 
+
+```{r, fig.cap="Scan this QR code to visit this poster online!", out.extra='style="display: block; margin: 0 auto; width: 22%;"'}
+
+library(qrencoder)
+
+png("../img/qr.png", width = 20, height = 20, units = "cm", res = 1200)
+par(mar=c(0,0,0,0))
+image(qrencode_raster("http://evoplant.uni-hohenheim.de/index.html"), 
+      asp=1,
+      col=c("white", "black"), 
+      axes=FALSE,
+      xlab="", ylab="")
+graphics.off()
+
+include_graphics("../img/qr.png")
+
+```
+
+# {.col-2}
+
+## Results 
+
+```{r, lct}
+
+tibble::tribble(
+                       ~"Location",   ~"Camacani, Puno",    ~"Illpa, Puno",   ~"Jauja, Junin",
+                       "Latitud",    "15°56'54.45”",  "15°42'49.24”",   "11°51'21.9”",
+                      "Longitud",    "69°51'31.13”",   "70°4'20.33”",  "75°23'43.01”",
+               "Altitude (masl)",            "3842",          "3815",          "3322",
+  "Maximum annual rainfall (mm)",           "169.6",         "197.7",           "124",
+  "Minimum annual rainfall (mm)",            "26.8",          "29.8",             "5",
+      "Maximum temperature (°C)",            "17.4",          "20.4",          "19.1",
+      "Minimum temperature (°C)",             "2.5",          "-0.4",           "0.8",
+                     "Soil type", "Sandy clay loam",    "Silty clay",          "Clay"
+  ) %>% 
+  
+  knitr::kable(caption = "Characteristics of the 3 locations in which the quinoa was planted in the season 2017-2018 for the breeding program for the release of new cultivars.")
+
+```
+
+```{r, pca, fig.align='center', fig.cap="Principal Component Analysis for the 3 location. A) variables and B) Individual"}
+
+knitr::include_graphics("../img/fig_arq_mv.png")
+
+```
+
+
+## Discussions and Conclusions
+
+The present breeding program is centered in developing new quinoa cultivars focused on smallholder farmers using the traditional technology and apply new cultural activities such as furrowing and density control that can help them to improve crop yield, many times the breeding programs invest in developing improved varieties for large-scale agribusinesses, but breeding programs are not tailored to the needs of smallholders [@gamboa2018Smallholders]. The breeding program in the Peruvian highlands has been achieved improved lines with good agronomic qualities and tolerant to biotic and abiotic stresses and farmers learned how to improve their quinoa production applying cultural activities.
+
+## Acknowledgements {style="--header-color:darkgreen; --other-color-for-h2-gradient:green;"}
+
+The authors want to thank Prof. Dr. Raul Blas Sevillano from UNALM, for his advice and support during the project. The  students Ana Lucia Ortega and Miguel Palacios from UNALM and Blander Mamani and Maritza Salazar from UNAP for their help in the experiments development, and to the farmers that made possible these project and KWS seed company for the funds for the project and my fellowship for my doctoral studies.
+
+## Refereces
