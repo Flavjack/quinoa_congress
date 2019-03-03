@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551655501950.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1629714595",
+    "id" : "81710CCA",
+    "lastKnownWriteTime" : 1551655525,
+    "last_content_update" : 1551655525539,
+    "path" : "~/GitHub/quinoa_congress/drposter.Rmd",
+    "project_path" : "drposter.Rmd",
+    "properties" : {
+        "cursorPosition" : "95,12",
+        "scrollLine" : "81"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
