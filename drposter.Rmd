@@ -8,8 +8,8 @@ output:
 # link-citations: yes
 colorlinks: yes
 bibliography:  
-- ../quinoa_2017/book.bib
-- ../quinoa_2017/pkgs.bib
+- book.bib
+- pkgs.bib
 csl: http://www.zotero.org/styles/iica-catie
 ---
 
@@ -107,16 +107,16 @@ The experiments had a lattice design of 10x10 with 2 replication by cross. The d
 
 library(qrencoder)
 
-png("../quinoa_2017/img/qr.png", width = 20, height = 20, units = "cm", res = 1200)
+png("img/qr.png", width = 20, height = 20, units = "cm", res = 1200)
 par(mar=c(0,0,0,0))
-image(qrencode_raster("http://evoplant.uni-hohenheim.de/index.html"), 
+image(qrencode_raster("https://flavjack.github.io/quinoa_congress/"), 
       asp=1,
       col=c("white", "black"), 
       axes=FALSE,
       xlab="", ylab="")
 graphics.off()
 
-include_graphics("../img/qr.png")
+include_graphics("img/qr.png")
 
 ```
 
@@ -144,10 +144,9 @@ tibble::tribble(
 
 ```{r, pca, fig.align='center', fig.cap="Principal Component Analysis for the 3 location. A) variables and B) Individual"}
 
-knitr::include_graphics("../img/fig_arq_mv.png")
+knitr::include_graphics("img/fig_arq_mv.png")
 
 ```
-
 
 ## Discussions and Conclusions
 
