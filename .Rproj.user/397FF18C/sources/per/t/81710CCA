@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1629714595",
+    "hash" : "2131814959",
     "id" : "81710CCA",
-    "lastKnownWriteTime" : 1551655525,
-    "last_content_update" : 1551655525539,
+    "lastKnownWriteTime" : 1551714701,
+    "last_content_update" : 1551714701080,
     "path" : "~/GitHub/quinoa_congress/drposter.Rmd",
     "project_path" : "drposter.Rmd",
     "properties" : {
-        "cursorPosition" : "95,12",
-        "scrollLine" : "81"
+        "cursorPosition" : "65,341",
+        "scrollLine" : "53"
     },
     "relative_order" : 1,
     "source_on_save" : false,

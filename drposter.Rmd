@@ -63,7 +63,7 @@ library(jpeg)
 
 ## Introduction
 
-Quinoa (*Chenopodium quinoa* Willd.) is an ancient crop from the Andean region and a staple food for smallholder farmers in the highlands. For centuries, Andean farmers have been involved in the domestication and selection of quinoa varieties. Quinoa is tolerant to a diverse range of abiotic stresses and has good nutritional properties, wich have made it attractive around the world as a new crop for food security and that can cope with Climate Change. At present, there is a great demand for the development of new quinoa varieties with higher yields; adapted to new habitats and adverse conditions of Climate Change, and with tolerance to biotic and abiotic stresses.
+Quinoa (*Chenopodium quinoa* Willd.) is an ancient crop from the Andean region and a staple food for smallholder farmers in the highlands. For centuries, Andean farmers have been involved in the domestication and selection of quinoa varieties. Quinoa is tolerant to a diverse range of abiotic stresses and has good nutritional properties, which have made it attractive around the world as a new crop for food security and that can cope with Climate Change. At present, there is a great demand for the development of new quinoa varieties with higher yields; adapted to new habitats and adverse conditions of Climate Change, and with tolerance to biotic and abiotic stresses.
 
 ## Objectives
 
@@ -154,6 +154,6 @@ The present breeding program is centered in developing new quinoa cultivars focu
 
 ## Acknowledgements {style="--header-color:darkgreen; --other-color-for-h2-gradient:green;"}
 
-The authors want to thank Prof. Dr. Raul Blas Sevillano from UNALM, for his advice and support during the project. The  students Ana Lucia Ortega and Miguel Palacios from UNALM and Blander Mamani and Maritza Salazar from UNAP for their help in the experiments development, and to the farmers that made possible these project and KWS seed company for the funds for the project and my fellowship for my doctoral studies.
+The authors want to thank Prof. Dr. Raul Blas Sevillano from UNALM, for his advice and support during the project. The  students Ana Lucia Ortega and Miguel Palacios from UNALM and Blander Mamani and Maritza Salazar from UNAP for their help in the experiments development, and to the farmers that made possible this project and KWS seed company for the funds for the project and my fellowship for my doctoral studies.
 
 ## Refereces
